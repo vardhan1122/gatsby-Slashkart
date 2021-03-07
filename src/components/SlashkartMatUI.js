@@ -52,14 +52,18 @@ function SlashkartMatUI(props) {
               >
                 <Grid zeroMinWidth item xs={2}>
                   <div>
-                    <Avatar src="https://images.unsplash.com/photo-1599686100490-c386c444baf1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"></Avatar>
+                    <Avatar
+                      alt="brand icon"
+                      src="https://images.unsplash.com/photo-1599686100490-c386c444baf1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    ></Avatar>
                   </div>
                 </Grid>
                 <Grid zeroMinWidth item xs={4} style={{ marginTop: "3px" }}>
                   <div
                     style={{
                       backgroundColor: "#ffffff",
-                      padding: "9px 1px",
+                      borderRadius: "5px",
+                      padding: "9px 2px",
                       paddingTop: "7px",
                       paddingBottom: "7px",
                       marginTop: "2px",
@@ -79,7 +83,8 @@ function SlashkartMatUI(props) {
                     ></input>
                     <IconButton
                       style={{
-                        paddingBottom: "7px",
+                        paddingBottom: "0px",
+                        paddingTop: "6px",
                         marginTop: "-30px",
                         float: "right",
                         paddingLeft: "0px",
@@ -127,7 +132,7 @@ function SlashkartMatUI(props) {
             >
               <Grid container justify="space-between" direction="row">
                 <Grid zeroMinWidth item>
-                  <div>
+                  <div style={{ paddingBottom: "10px" }}>
                     <FormControl>
                       <InputLabel
                         style={{
@@ -190,7 +195,7 @@ function SlashkartMatUI(props) {
                   </div>
                 </Grid>
                 <Grid zeroMinWidth item>
-                  <div>
+                  <div style={{ paddingBottom: "10px" }}>
                     <FormControl>
                       <InputLabel
                         style={{
@@ -201,7 +206,7 @@ function SlashkartMatUI(props) {
                           fontWeight: "700",
                         }}
                       >
-                        TVs &amp; Appliances
+                        TV &amp; Appliances
                       </InputLabel>
                       <Select
                         variant="standard"
@@ -243,7 +248,7 @@ function SlashkartMatUI(props) {
                   </div>
                 </Grid>
                 <Grid zeroMinWidth item>
-                  <div>
+                  <div style={{ paddingBottom: "10px" }}>
                     <FormControl>
                       <InputLabel
                         style={{
@@ -313,7 +318,7 @@ function SlashkartMatUI(props) {
                   </div>
                 </Grid>
                 <Grid zeroMinWidth item>
-                  <div>
+                  <div style={{ paddingBottom: "10px" }}>
                     <FormControl>
                       <InputLabel
                         style={{
@@ -366,7 +371,7 @@ function SlashkartMatUI(props) {
                   </div>
                 </Grid>
                 <Grid zeroMinWidth item>
-                  <div>
+                  <div style={{ paddingBottom: "10px" }}>
                     <FormControl>
                       <InputLabel
                         style={{
@@ -437,7 +442,7 @@ function SlashkartMatUI(props) {
                   </div>
                 </Grid>
                 <Grid zeroMinWidth item>
-                  <div>
+                  <div style={{ paddingBottom: "10px" }}>
                     <FormControl>
                       <InputLabel
                         style={{
@@ -500,7 +505,7 @@ function SlashkartMatUI(props) {
                   </div>
                 </Grid>
                 <Grid zeroMinWidth item>
-                  <div>
+                  <div style={{ paddingBottom: "10px" }}>
                     <FormControl>
                       <InputLabel
                         style={{
@@ -511,12 +516,12 @@ function SlashkartMatUI(props) {
                           fontWeight: "700",
                         }}
                       >
-                        Sports , Books &amp; More
+                        Sports &amp; Books
                       </InputLabel>
                       <Select
                         variant="standard"
                         labelWidth={0}
-                        style={{ marginLeft: "122px", marginTop: "-10px" }}
+                        style={{ marginLeft: "78px", marginTop: "-10px" }}
                       >
                         <Grid container justify="space-around" direction="row">
                           <Grid zeroMinWidth item>
@@ -566,7 +571,7 @@ function SlashkartMatUI(props) {
                   </div>
                 </Grid>
                 <Grid zeroMinWidth item>
-                  <div style={{ marginTop: "-8px" }}>
+                  <div style={{ paddingBottom: "10px", marginTop: "-8px" }}>
                     <Link
                       style={{
                         fontSize: "13px",
@@ -580,7 +585,7 @@ function SlashkartMatUI(props) {
                   </div>
                 </Grid>
                 <Grid zeroMinWidth item>
-                  <div style={{ marginTop: "-8px" }}>
+                  <div style={{ paddingBottom: "10px", marginTop: "-8px" }}>
                     <Link
                       style={{
                         fontSize: "13px",
@@ -594,7 +599,7 @@ function SlashkartMatUI(props) {
                   </div>
                 </Grid>
                 <Grid zeroMinWidth item>
-                  <div style={{ marginTop: "-8px" }}>
+                  <div style={{ paddingBottom: "10px", marginTop: "-8px" }}>
                     <Link
                       style={{
                         fontSize: "13px",
@@ -611,7 +616,15 @@ function SlashkartMatUI(props) {
             </Container>
           </AppBar>
         </Container>
-        <Paper square style={{ backgroundColor: "#f1f3f6", padding: "10px" }}>
+        <Paper
+          square
+          style={{
+            backgroundColor: "#f1f3f6",
+            padding: "10px",
+            paddingLeft: "20px",
+            paddingRight: "20px",
+          }}
+        >
           <Paper style={{ marginTop: "120px" }}>
             <div style={{ backgroundColor: "#40a8b9", paddingTop: "-120px" }}>
               <Grid
@@ -630,6 +643,7 @@ function SlashkartMatUI(props) {
                   style={{ paddingBottom: "10px" }}
                 >
                   <img
+                    alt="weekend sale"
                     src="https://images.unsplash.com/photo-1572584642822-6f8de0243c93?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8c2FsZXxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
                     style={{ width: "100%", height: "150px" }}
                   ></img>
@@ -648,6 +662,7 @@ function SlashkartMatUI(props) {
                       style={{ marginBottom: "10px" }}
                     >
                       <img
+                        alt="mobile collection"
                         src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8bW9iaWxlc3xlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
                         style={{
                           width: "70px",
@@ -681,6 +696,7 @@ function SlashkartMatUI(props) {
                       style={{ marginBottom: "10px" }}
                     >
                       <img
+                        alt="electronics collection"
                         src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGVsZWN0cm9uaWN8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"
                         style={{
                           width: "70px",
@@ -714,6 +730,7 @@ function SlashkartMatUI(props) {
                       style={{ marginBottom: "10px" }}
                     >
                       <img
+                        alt="fashion collection"
                         src="https://images.unsplash.com/photo-1589544421314-2d8297a767a5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fGZhc2hpb258ZW58MHwyfDB8&auto=format&fit=crop&w=500&q=60"
                         style={{
                           width: "70px",
@@ -742,6 +759,7 @@ function SlashkartMatUI(props) {
                       style={{ marginBottom: "10px" }}
                     >
                       <img
+                        alt="furniture collection"
                         src="https://images.unsplash.com/photo-1588714306299-aca44edf20de?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8ZnVybml0dXJlc3xlbnwwfDJ8MHw%3D&auto=format&fit=crop&w=500&q=60"
                         style={{
                           width: "70px",
@@ -770,6 +788,7 @@ function SlashkartMatUI(props) {
                       style={{ marginBottom: "10px" }}
                     >
                       <img
+                        alt="beauty collection"
                         src="https://images.unsplash.com/photo-1531751519425-e1fa9110434b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8YmVhdXR5fGVufDB8MnwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
                         style={{
                           width: "70px",
@@ -798,6 +817,7 @@ function SlashkartMatUI(props) {
                       style={{ marginBottom: "10px" }}
                     >
                       <img
+                        alt="kitchen collection"
                         src="https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjZ8fGtpdGNoZW58ZW58MHwyfDB8&auto=format&fit=crop&w=500&q=60"
                         style={{
                           width: "70px",
@@ -824,10 +844,12 @@ function SlashkartMatUI(props) {
             <div>
               <Link>
                 <img
+                  alt="fashion sale image1"
                   src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8b25saW5lJTIwc2hvcHBpbmd8ZW58MHwwfDB8&auto=format&fit=crop&w=500&q=60"
                   style={{ width: "50%", height: "150px" }}
                 ></img>
                 <img
+                  alt="fashion sale image2"
                   src="https://images.unsplash.com/photo-1483181957632-8bda974cbc91?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                   style={{ width: "50%", height: "150px" }}
                 ></img>
@@ -838,6 +860,7 @@ function SlashkartMatUI(props) {
                 style={{
                   borderRadius: "0px",
                   backgroundColor: "#ffffff",
+                  float: "left",
                   paddingLeft: "0px",
                   paddingRight: "0px",
                 }}
@@ -860,7 +883,7 @@ function SlashkartMatUI(props) {
           <Paper
             variant="elevation"
             elevation={0}
-            style={{ marginTop: "50px" }}
+            style={{ marginTop: "120px" }}
           >
             <div style={{ padding: "10px", textAlign: "center" }}>
               <Grid container justify="space-between">
@@ -900,8 +923,9 @@ function SlashkartMatUI(props) {
                       style={{ width: "100%" }}
                     >
                       <img
+                        alt="laptop"
                         src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wc3xlbnwwfDB8MHw%3D&auto=format&fit=crop&w=500&q=60"
-                        style={{ width: "100%", height: "150px" }}
+                        style={{ width: "100%", height: "200px" }}
                       ></img>
                     </Link>
                     <List>
@@ -942,8 +966,9 @@ function SlashkartMatUI(props) {
                       style={{ width: "100%" }}
                     >
                       <img
+                        alt="furniture"
                         src="https://images.unsplash.com/photo-1505409628601-edc9af17fda6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                        style={{ width: "100%", height: "150px" }}
+                        style={{ width: "100%", height: "200px" }}
                       ></img>
                     </Link>
                     <List>
@@ -980,8 +1005,9 @@ function SlashkartMatUI(props) {
                       style={{ width: "100%" }}
                     >
                       <img
+                        alt="camera"
                         src="https://images.unsplash.com/flagged/photo-1550255120-9b2a9de58dfd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fGNhbWVyYXxlbnwwfDB8MHw%3D&auto=format&fit=crop&w=500&q=60"
-                        style={{ width: "100%", height: "150px" }}
+                        style={{ width: "100%", height: "200px" }}
                       ></img>
                     </Link>
                     <List>
@@ -1022,8 +1048,9 @@ function SlashkartMatUI(props) {
                       style={{ width: "100%" }}
                     >
                       <img
+                        alt="furniture"
                         src="https://images.unsplash.com/photo-1559599238-308793637427?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDh8fGJlZHJvb20lMjAlMjBmdXJuaXR1cmV8ZW58MHwwfDB8&auto=format&fit=crop&w=500&q=60"
-                        style={{ width: "100%", height: "150px" }}
+                        style={{ width: "100%", height: "200px" }}
                       ></img>
                     </Link>
                     <List>
@@ -1068,6 +1095,7 @@ function SlashkartMatUI(props) {
                       <div style={{ textAlign: "center" }}>
                         <Paper elevation={0}>
                           <img
+                            alt="diwali"
                             src="https://images.unsplash.com/photo-1594404708321-12d10ea5590f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fGRpd2FsaSUyMGxpZ2h0fGVufDB8MHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
                             style={{
                               width: "100%",
@@ -1127,8 +1155,9 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="mobile"
                               src="https://images.unsplash.com/photo-1592898741882-ff375ff0e692?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fDEwbW9iaWxlJTIwcGhvbmVzfGVufDB8MHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                              style={{ width: "100%", height: "150px" }}
+                              style={{ width: "100%", height: "200px" }}
                             ></img>
                           </Link>
                           <List>
@@ -1171,11 +1200,12 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="AC"
                               src="https://images.unsplash.com/photo-1436473849883-bb3464c23e93?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODl8fGFpciUyMGNvbmRpdGlvbmluZ3xlbnwwfDB8MHw%3D&auto=format&fit=crop&w=500&q=60"
                               style={{
                                 width: "100%",
-                                height: "150px",
                                 paddingRight: "10px",
+                                height: "200px",
                               }}
                             ></img>
                           </Link>
@@ -1221,11 +1251,12 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="refrigerator"
                               src="https://images.unsplash.com/photo-1588854337115-1c67d9247e4d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cmVmcmlnZXJhdG9yfGVufDB8MHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
                               style={{
                                 width: "100%",
-                                height: "150px",
                                 paddingLeft: "10px",
+                                height: "200px",
                               }}
                             ></img>
                           </Link>
@@ -1271,8 +1302,9 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="watch"
                               src="https://images.unsplash.com/photo-1601801958048-aa2e1c3e21e3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fHdhdGNoZXMlMjBjb21ib3xlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                              style={{ width: "100%", height: "150px" }}
+                              style={{ width: "100%", height: "200px" }}
                             ></img>
                           </Link>
                           <List>
@@ -1326,6 +1358,7 @@ function SlashkartMatUI(props) {
                       <div style={{ textAlign: "center" }}>
                         <Paper elevation={0}>
                           <img
+                            alt="70% off"
                             src="https://images.unsplash.com/photo-1513451732213-5775a1c40335?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRpc2NvdW50JTIwc2FsZXxlbnwwfDB8MHw%3D&auto=format&fit=crop&w=500&q=60"
                             style={{
                               width: "100%",
@@ -1378,11 +1411,12 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="pant"
                               src="https://images.unsplash.com/photo-1598343175492-9e7dc0e63cc6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHNsaXBwZXJzfGVufDB8MHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
                               style={{
                                 width: "100%",
-                                height: "150px",
                                 paddingRight: "10px",
+                                height: "200px",
                               }}
                             ></img>
                           </Link>
@@ -1426,11 +1460,12 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="women frock"
                               src="https://images.unsplash.com/photo-1583397758734-a524369cd4eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
                               style={{
                                 width: "100%",
-                                height: "150px",
                                 paddingRight: "10px",
+                                height: "200px",
                               }}
                             ></img>
                           </Link>
@@ -1476,11 +1511,12 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="trimmer"
                               src="https://images.unsplash.com/photo-1508380702597-707c1b00695c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dHJpbW1lcnxlbnwwfDB8MHw%3D&auto=format&fit=crop&w=500&q=60"
                               style={{
                                 width: "100%",
-                                height: "150px",
                                 paddingLeft: "10px",
+                                height: "200px",
                               }}
                             ></img>
                           </Link>
@@ -1526,8 +1562,9 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="women sweater"
                               src="https://images.unsplash.com/photo-1555819206-d6cc94c3aac6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fHdvbWVuJTIwamFja2V0fGVufDB8fDB8&auto=format&fit=crop&w=500&q=60"
-                              style={{ width: "100%", height: "150px" }}
+                              style={{ width: "100%", height: "200px" }}
                             ></img>
                           </Link>
                           <List>
@@ -1581,6 +1618,7 @@ function SlashkartMatUI(props) {
                       <div style={{ textAlign: "center" }}>
                         <Paper elevation={0}>
                           <img
+                            alt="all electronics"
                             src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8ZWxlY3Ryb25pY3N8ZW58MHwwfDB8&auto=format&fit=crop&w=500&q=60"
                             style={{
                               width: "100%",
@@ -1633,11 +1671,12 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="hair dryer"
                               src="https://images.unsplash.com/photo-1581837672885-533599e35674?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aGFpciUyMGRyeWVyfGVufDB8MHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
                               style={{
                                 width: "100%",
-                                height: "150px",
                                 paddingRight: "10px",
+                                height: "200px",
                               }}
                             ></img>
                           </Link>
@@ -1681,11 +1720,12 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="gaming console"
                               src="https://images.unsplash.com/photo-1526509867162-5b0c0d1b4b33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
                               style={{
                                 width: "100%",
-                                height: "150px",
                                 paddingRight: "10px",
+                                height: "200px",
                               }}
                             ></img>
                           </Link>
@@ -1731,11 +1771,12 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="monitor"
                               src="https://images.unsplash.com/flagged/photo-1551954810-43cd6aef5b1f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uaXRvcnxlbnwwfDB8MHw%3D&auto=format&fit=crop&w=500&q=60"
                               style={{
                                 width: "100%",
-                                height: "150px",
                                 paddingLeft: "10px",
+                                height: "200px",
                               }}
                             ></img>
                           </Link>
@@ -1781,8 +1822,9 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="speakers"
                               src="https://images.unsplash.com/photo-1603144229867-797e6ceeb9c6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8c291bmQlMjBzcGVha2Vyc3xlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                              style={{ width: "100%", height: "150px" }}
+                              style={{ width: "100%", height: "200px" }}
                             ></img>
                           </Link>
                           <List>
@@ -1864,8 +1906,9 @@ function SlashkartMatUI(props) {
                       style={{ width: "100%" }}
                     >
                       <img
+                        alt="women frock"
                         src="https://images.unsplash.com/photo-1583039949243-e4119fa27a7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                        style={{ width: "100%", height: "150px" }}
+                        style={{ width: "100%", height: "200px" }}
                       ></img>
                     </Link>
                     <List>
@@ -1902,8 +1945,9 @@ function SlashkartMatUI(props) {
                       style={{ width: "100%" }}
                     >
                       <img
+                        alt="men shirt"
                         src="https://images.unsplash.com/photo-1504593811423-6dd665756598?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8bWVuJTIwc2hpcnQlMjBmYXNoaW9ufGVufDB8MHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                        style={{ width: "100%", height: "150px" }}
+                        style={{ width: "100%", height: "200px" }}
                       ></img>
                     </Link>
                     <List>
@@ -1940,8 +1984,9 @@ function SlashkartMatUI(props) {
                       style={{ width: "100%" }}
                     >
                       <img
+                        alt="women frock"
                         src="https://images.unsplash.com/photo-1602629339830-b7848e2ff629?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                        style={{ width: "100%", height: "150px" }}
+                        style={{ width: "100%", height: "200px" }}
                       ></img>
                     </Link>
                     <List>
@@ -1982,8 +2027,9 @@ function SlashkartMatUI(props) {
                       style={{ width: "100%" }}
                     >
                       <img
+                        alt="men shirt"
                         src="https://images.unsplash.com/photo-1492447216082-4726bf04d1d1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTQ0fHxtZW4lMjBzaGlydHxlbnwwfDB8MHw%3D&auto=format&fit=crop&w=500&q=60"
-                        style={{ width: "100%", height: "150px" }}
+                        style={{ width: "100%", height: "200px" }}
                       ></img>
                     </Link>
                     <List>
@@ -2186,13 +2232,15 @@ function SlashkartMatUI(props) {
           <div style={{ paddingTop: "10px" }}>
             <Grid container justify="space-around" direction="row">
               <Grid zeroMinWidth item xs={3}>
-                <div>
+                <div style={{ paddingLeft: "5px" }}>
                   <Typography
                     variant="body1"
+                    align="left"
                     style={{
-                      marginLeft: "10px",
-                      color: "rgba(255,255,255,0.23)",
+                      marginLeft: "15px",
                       fontSize: "14px",
+                      paddingBottom: "5px",
+                      color: "rgba(255,255,255,0.23)",
                     }}
                   >
                     ABOUT
@@ -2220,10 +2268,12 @@ function SlashkartMatUI(props) {
                 <div>
                   <Typography
                     variant="body1"
+                    align="left"
                     style={{
-                      marginLeft: "10px",
-                      color: "rgba(255,255,255,0.23)",
+                      marginLeft: "15px",
                       fontSize: "14px",
+                      paddingBottom: "5px",
+                      color: "rgba(255,255,255,0.23)",
                     }}
                   >
                     HELP
@@ -2251,10 +2301,12 @@ function SlashkartMatUI(props) {
                 <div>
                   <Typography
                     variant="body1"
+                    align="left"
                     style={{
-                      marginLeft: "10px",
-                      color: "rgba(255,255,255,0.23)",
+                      marginLeft: "15px",
                       fontSize: "14px",
+                      paddingBottom: "5px",
+                      color: "rgba(255,255,255,0.23)",
                     }}
                   >
                     POLICY
@@ -2285,10 +2337,12 @@ function SlashkartMatUI(props) {
                 <div>
                   <Typography
                     variant="body1"
+                    align="left"
                     style={{
-                      marginLeft: "10px",
-                      color: "rgba(255,255,255,0.23)",
+                      marginLeft: "15px",
                       fontSize: "14px",
+                      paddingBottom: "5px",
+                      color: "rgba(255,255,255,0.23)",
                     }}
                   >
                     SOCIAL
@@ -2307,13 +2361,15 @@ function SlashkartMatUI(props) {
                 </div>
               </Grid>
               <Grid zeroMinWidth item xs={6}>
-                <div>
+                <div style={{ paddingLeft: "15px" }}>
                   <Typography
                     variant="body1"
+                    align="left"
                     style={{
-                      marginLeft: "10px",
-                      color: "rgba(255,255,255,0.23)",
+                      marginLeft: "5px",
                       fontSize: "14px",
+                      paddingBottom: "5px",
+                      color: "rgba(255,255,255,0.23)",
                     }}
                   >
                     Mail Us :
@@ -2321,36 +2377,42 @@ function SlashkartMatUI(props) {
                   <div style={{ marginLeft: "5px" }}>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Slashdiv Technologies Private Limited,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Flat 15,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       PS Sivaswamy Salai,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Mylapore,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Chennai-600004,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Tamilnadu, India.
@@ -2362,10 +2424,12 @@ function SlashkartMatUI(props) {
                 <div>
                   <Typography
                     variant="body1"
+                    align="left"
                     style={{
-                      marginLeft: "10px",
-                      color: "rgba(255,255,255,0.23)",
+                      marginLeft: "5px",
                       fontSize: "14px",
+                      paddingBottom: "5px",
+                      color: "rgba(255,255,255,0.23)",
                     }}
                   >
                     Registered Office Address :
@@ -2373,42 +2437,49 @@ function SlashkartMatUI(props) {
                   <div style={{ marginLeft: "5px" }}>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Slashdiv Technologies Private Limited,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Flat 15,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       PS Sivaswamy Salai,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Mylapore,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Chennai-600004,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Tamilnadu, India.
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Telephone :{" "}
@@ -2422,7 +2493,7 @@ function SlashkartMatUI(props) {
           <Divider
             variant="fullWidth"
             orientation="horizontal"
-            style={{ backgroundColor: "#4a4a4a" }}
+            style={{ backgroundColor: "#4a4a4a", marginTop: "10px" }}
           />
           <div style={{ padding: "10px" }}>
             <Grid
@@ -2472,10 +2543,11 @@ function SlashkartMatUI(props) {
                   </IconButton>
                 </div>
               </Grid>
-              <Grid zeroMinWidth item xs={4}>
-                <div style={{ paddingTop: "14px" }}>
+              <Grid zeroMinWidth item xs={12}>
+                <div style={{ paddingTop: "14px", paddingBottom: "14px" }}>
                   <Typography
                     variant="h6"
+                    align="center"
                     style={{ color: "#ffffff", fontSize: "14px" }}
                   >
                     © 2019-2020 Slashkart.com
@@ -2510,7 +2582,10 @@ function SlashkartMatUI(props) {
               >
                 <Grid zeroMinWidth item>
                   <div>
-                    <Avatar src="https://images.unsplash.com/photo-1599686100490-c386c444baf1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"></Avatar>
+                    <Avatar
+                      alt="brand icon"
+                      src="https://images.unsplash.com/photo-1599686100490-c386c444baf1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    ></Avatar>
                   </div>
                 </Grid>
                 <Grid
@@ -2563,7 +2638,11 @@ function SlashkartMatUI(props) {
                 </Grid>
                 <Grid zeroMinWidth item xs={4} style={{ marginTop: "3px" }}>
                   <div
-                    style={{ backgroundColor: "#ffffff", padding: "9px 1px" }}
+                    style={{
+                      backgroundColor: "#ffffff",
+                      borderRadius: "5px",
+                      padding: "9px 10px",
+                    }}
                   >
                     <input
                       type="search"
@@ -2596,14 +2675,11 @@ function SlashkartMatUI(props) {
                     <Button
                       style={{
                         backgroundColor: "#ffffff",
-                        borderRadius: "0px",
-                        paddingTop: "3px",
+                        borderRadius: "5px",
+                        fontSize: "15px",
+                        padding: "6px 40px",
                         textTransform: "none",
                         color: "#2874f0",
-                        paddingLeft: "30px",
-                        fontSize: "15px",
-                        paddingBottom: "3px",
-                        paddingRight: "30px",
                       }}
                     >
                       Login
@@ -3141,12 +3217,12 @@ function SlashkartMatUI(props) {
                           fontWeight: "700",
                         }}
                       >
-                        Sports , Books &amp; More
+                        Sports, Books &amp; More{" "}
                       </InputLabel>
                       <Select
                         variant="standard"
                         labelWidth={0}
-                        style={{ marginLeft: "122px", marginTop: "-10px" }}
+                        style={{ marginLeft: "118px", marginTop: "-10px" }}
                       >
                         <Grid container justify="space-around" direction="row">
                           <Grid zeroMinWidth item>
@@ -3245,7 +3321,12 @@ function SlashkartMatUI(props) {
           elevation={0}
           variant="elevation"
           square
-          style={{ backgroundColor: "#f1f3f6", padding: "10px" }}
+          style={{
+            backgroundColor: "#f1f3f6",
+            padding: "10px",
+            paddingLeft: "10px",
+            paddingRight: "10px",
+          }}
         >
           <Paper>
             <div style={{ backgroundColor: "#40a8b9" }}>
@@ -3259,6 +3340,7 @@ function SlashkartMatUI(props) {
               >
                 <Grid zeroMinWidth item xs={4}>
                   <img
+                    alt="weekend sale"
                     src="https://images.unsplash.com/photo-1572584642822-6f8de0243c93?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8c2FsZXxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
                     style={{ width: "100%", height: "150px" }}
                   ></img>
@@ -3272,6 +3354,7 @@ function SlashkartMatUI(props) {
                       style={{ marginBottom: "10px" }}
                     >
                       <img
+                        alt="mobile collection"
                         src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8bW9iaWxlc3xlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
                         style={{
                           width: "70px",
@@ -3300,6 +3383,7 @@ function SlashkartMatUI(props) {
                       style={{ marginBottom: "10px" }}
                     >
                       <img
+                        alt="electronic collection"
                         src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGVsZWN0cm9uaWN8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60"
                         style={{
                           width: "70px",
@@ -3328,6 +3412,7 @@ function SlashkartMatUI(props) {
                       style={{ marginBottom: "10px" }}
                     >
                       <img
+                        alt="fashion collection"
                         src="https://images.unsplash.com/photo-1589544421314-2d8297a767a5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fGZhc2hpb258ZW58MHwyfDB8&auto=format&fit=crop&w=500&q=60"
                         style={{
                           width: "70px",
@@ -3356,6 +3441,7 @@ function SlashkartMatUI(props) {
                       style={{ marginBottom: "10px" }}
                     >
                       <img
+                        alt="furniture collection"
                         src="https://images.unsplash.com/photo-1588714306299-aca44edf20de?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8ZnVybml0dXJlc3xlbnwwfDJ8MHw%3D&auto=format&fit=crop&w=500&q=60"
                         style={{
                           width: "70px",
@@ -3384,6 +3470,7 @@ function SlashkartMatUI(props) {
                       style={{ marginBottom: "10px" }}
                     >
                       <img
+                        alt="beauty collection"
                         src="https://images.unsplash.com/photo-1531751519425-e1fa9110434b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8YmVhdXR5fGVufDB8MnwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
                         style={{
                           width: "70px",
@@ -3412,6 +3499,7 @@ function SlashkartMatUI(props) {
                       style={{ marginBottom: "10px" }}
                     >
                       <img
+                        alt="kitchen collection"
                         src="https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjZ8fGtpdGNoZW58ZW58MHwyfDB8&auto=format&fit=crop&w=500&q=60"
                         style={{
                           width: "70px",
@@ -3438,10 +3526,12 @@ function SlashkartMatUI(props) {
             <div style={{ width: "100%" }}>
               <Link>
                 <img
+                  alt="fashion sale image1"
                   src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8b25saW5lJTIwc2hvcHBpbmd8ZW58MHwwfDB8&auto=format&fit=crop&w=500&q=60"
                   style={{ width: "50%", height: "250px" }}
                 ></img>
                 <img
+                  alt="fashion sale image2"
                   src="https://images.unsplash.com/photo-1483181957632-8bda974cbc91?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                   style={{ width: "50%", height: "250px" }}
                 ></img>
@@ -3520,8 +3610,9 @@ function SlashkartMatUI(props) {
                       style={{ width: "100%" }}
                     >
                       <img
+                        alt="laptop"
                         src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wc3xlbnwwfDB8MHw%3D&auto=format&fit=crop&w=500&q=60"
-                        style={{ width: "100%", height: "150px" }}
+                        style={{ width: "100%", height: "200px" }}
                       ></img>
                     </Link>
                     <List>
@@ -3562,8 +3653,9 @@ function SlashkartMatUI(props) {
                       style={{ width: "100%" }}
                     >
                       <img
+                        alt="furniture"
                         src="https://images.unsplash.com/photo-1505409628601-edc9af17fda6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                        style={{ width: "100%", height: "150px" }}
+                        style={{ width: "100%", height: "200px" }}
                       ></img>
                     </Link>
                     <List>
@@ -3600,8 +3692,9 @@ function SlashkartMatUI(props) {
                       style={{ width: "100%" }}
                     >
                       <img
+                        alt="camera"
                         src="https://images.unsplash.com/flagged/photo-1550255120-9b2a9de58dfd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fGNhbWVyYXxlbnwwfDB8MHw%3D&auto=format&fit=crop&w=500&q=60"
-                        style={{ width: "100%", height: "150px" }}
+                        style={{ width: "100%", height: "200px" }}
                       ></img>
                     </Link>
                     <List>
@@ -3642,8 +3735,9 @@ function SlashkartMatUI(props) {
                       style={{ width: "100%" }}
                     >
                       <img
+                        alt="furniture"
                         src="https://images.unsplash.com/photo-1559599238-308793637427?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDh8fGJlZHJvb20lMjAlMjBmdXJuaXR1cmV8ZW58MHwwfDB8&auto=format&fit=crop&w=500&q=60"
-                        style={{ width: "100%", height: "150px" }}
+                        style={{ width: "100%", height: "200px" }}
                       ></img>
                     </Link>
                     <List>
@@ -3706,6 +3800,7 @@ function SlashkartMatUI(props) {
                     </Button>
                     <Paper elevation={0} style={{ marginTop: "30px" }}>
                       <img
+                        alt="diwali"
                         src="https://images.unsplash.com/photo-1594404708321-12d10ea5590f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fGRpd2FsaSUyMGxpZ2h0fGVufDB8MHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
                         style={{
                           width: "100%",
@@ -3742,8 +3837,9 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="mobile"
                               src="https://images.unsplash.com/photo-1592898741882-ff375ff0e692?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzh8fDEwbW9iaWxlJTIwcGhvbmVzfGVufDB8MHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                              style={{ width: "100%", height: "150px" }}
+                              style={{ width: "100%", height: "200px" }}
                             ></img>
                           </Link>
                           <List>
@@ -3786,8 +3882,9 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="AC"
                               src="https://images.unsplash.com/photo-1436473849883-bb3464c23e93?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODl8fGFpciUyMGNvbmRpdGlvbmluZ3xlbnwwfDB8MHw%3D&auto=format&fit=crop&w=500&q=60"
-                              style={{ width: "100%", height: "150px" }}
+                              style={{ width: "100%", height: "200px" }}
                             ></img>
                           </Link>
                           <List>
@@ -3832,8 +3929,9 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="refrigerator"
                               src="https://images.unsplash.com/photo-1588854337115-1c67d9247e4d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cmVmcmlnZXJhdG9yfGVufDB8MHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                              style={{ width: "100%", height: "150px" }}
+                              style={{ width: "100%", height: "200px" }}
                             ></img>
                           </Link>
                           <List>
@@ -3912,8 +4010,9 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="pant"
                               src="https://images.unsplash.com/photo-1598343175492-9e7dc0e63cc6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHNsaXBwZXJzfGVufDB8MHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                              style={{ width: "100%", height: "150px" }}
+                              style={{ width: "100%", height: "200px" }}
                             ></img>
                           </Link>
                           <List>
@@ -3956,8 +4055,9 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="women frock"
                               src="https://images.unsplash.com/photo-1583397758734-a524369cd4eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                              style={{ width: "100%", height: "150px" }}
+                              style={{ width: "100%", height: "200px" }}
                             ></img>
                           </Link>
                           <List>
@@ -4002,8 +4102,9 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="trimmer"
                               src="https://images.unsplash.com/photo-1508380702597-707c1b00695c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dHJpbW1lcnxlbnwwfDB8MHw%3D&auto=format&fit=crop&w=500&q=60"
-                              style={{ width: "100%", height: "150px" }}
+                              style={{ width: "100%", height: "200px" }}
                             ></img>
                           </Link>
                           <List>
@@ -4060,6 +4161,7 @@ function SlashkartMatUI(props) {
                       style={{ marginTop: "30px", paddingRight: "10px" }}
                     >
                       <img
+                        alt="70% off"
                         src="https://images.unsplash.com/photo-1513451732213-5775a1c40335?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRpc2NvdW50JTIwc2FsZXxlbnwwfDB8MHw%3D&auto=format&fit=crop&w=500&q=60"
                         style={{
                           width: "100%",
@@ -4106,6 +4208,7 @@ function SlashkartMatUI(props) {
                     </Button>
                     <Paper elevation={0} style={{ marginTop: "30px" }}>
                       <img
+                        alt="all electronics"
                         src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8ZWxlY3Ryb25pY3N8ZW58MHwwfDB8&auto=format&fit=crop&w=500&q=60"
                         style={{
                           width: "100%",
@@ -4142,8 +4245,9 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="hair dryers"
                               src="https://images.unsplash.com/photo-1581837672885-533599e35674?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aGFpciUyMGRyeWVyfGVufDB8MHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                              style={{ width: "100%", height: "150px" }}
+                              style={{ width: "100%", height: "200px" }}
                             ></img>
                           </Link>
                           <List>
@@ -4186,8 +4290,9 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="gaming console"
                               src="https://images.unsplash.com/photo-1526509867162-5b0c0d1b4b33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                              style={{ width: "100%", height: "150px" }}
+                              style={{ width: "100%", height: "200px" }}
                             ></img>
                           </Link>
                           <List>
@@ -4232,8 +4337,9 @@ function SlashkartMatUI(props) {
                             style={{ width: "100%" }}
                           >
                             <img
+                              alt="monitor"
                               src="https://images.unsplash.com/flagged/photo-1551954810-43cd6aef5b1f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uaXRvcnxlbnwwfDB8MHw%3D&auto=format&fit=crop&w=500&q=60"
-                              style={{ width: "100%", height: "150px" }}
+                              style={{ width: "100%", height: "200px" }}
                             ></img>
                           </Link>
                           <List>
@@ -4316,8 +4422,9 @@ function SlashkartMatUI(props) {
                       style={{ width: "100%" }}
                     >
                       <img
+                        alt="women frock"
                         src="https://images.unsplash.com/photo-1583039949243-e4119fa27a7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                        style={{ width: "100%", height: "150px" }}
+                        style={{ width: "100%", height: "200px" }}
                       ></img>
                     </Link>
                     <List>
@@ -4354,8 +4461,9 @@ function SlashkartMatUI(props) {
                       style={{ width: "100%" }}
                     >
                       <img
+                        alt="men shirt"
                         src="https://images.unsplash.com/photo-1504593811423-6dd665756598?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8bWVuJTIwc2hpcnQlMjBmYXNoaW9ufGVufDB8MHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                        style={{ width: "100%", height: "150px" }}
+                        style={{ width: "100%", height: "200px" }}
                       ></img>
                     </Link>
                     <List>
@@ -4392,8 +4500,9 @@ function SlashkartMatUI(props) {
                       style={{ width: "100%" }}
                     >
                       <img
+                        alt="women frock"
                         src="https://images.unsplash.com/photo-1602629339830-b7848e2ff629?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                        style={{ width: "100%", height: "150px" }}
+                        style={{ width: "100%", height: "200px" }}
                       ></img>
                     </Link>
                     <List>
@@ -4434,8 +4543,9 @@ function SlashkartMatUI(props) {
                       style={{ width: "100%" }}
                     >
                       <img
+                        alt="men shirt"
                         src="https://images.unsplash.com/photo-1492447216082-4726bf04d1d1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTQ0fHxtZW4lMjBzaGlydHxlbnwwfDB8MHw%3D&auto=format&fit=crop&w=500&q=60"
-                        style={{ width: "100%", height: "150px" }}
+                        style={{ width: "100%", height: "200px" }}
                       ></img>
                     </Link>
                     <List>
@@ -4650,6 +4760,7 @@ function SlashkartMatUI(props) {
           <div style={{ padding: "20px" }}>
             <Grid
               container
+              alignContent="flex-start"
               wrap="nowrap"
               justify="space-around"
               direction="row"
@@ -4658,10 +4769,12 @@ function SlashkartMatUI(props) {
                 <div>
                   <Typography
                     variant="body1"
+                    align="left"
                     style={{
-                      marginLeft: "10px",
-                      color: "rgba(255,255,255,0.23)",
+                      marginLeft: "15px",
                       fontSize: "14px",
+                      paddingBottom: "5px",
+                      color: "rgba(255,255,255,0.23)",
                     }}
                   >
                     ABOUT
@@ -4689,10 +4802,12 @@ function SlashkartMatUI(props) {
                 <div>
                   <Typography
                     variant="body1"
+                    align="left"
                     style={{
-                      marginLeft: "10px",
-                      color: "rgba(255,255,255,0.23)",
+                      marginLeft: "15px",
                       fontSize: "14px",
+                      paddingBottom: "5px",
+                      color: "rgba(255,255,255,0.23)",
                     }}
                   >
                     HELP
@@ -4720,10 +4835,12 @@ function SlashkartMatUI(props) {
                 <div>
                   <Typography
                     variant="body1"
+                    align="left"
                     style={{
-                      marginLeft: "10px",
-                      color: "rgba(255,255,255,0.23)",
+                      marginLeft: "15px",
                       fontSize: "14px",
+                      paddingBottom: "5px",
+                      color: "rgba(255,255,255,0.23)",
                     }}
                   >
                     POLICY
@@ -4754,10 +4871,12 @@ function SlashkartMatUI(props) {
                 <div>
                   <Typography
                     variant="body1"
+                    align="left"
                     style={{
-                      marginLeft: "10px",
-                      color: "rgba(255,255,255,0.23)",
+                      marginLeft: "15px",
                       fontSize: "14px",
+                      paddingBottom: "5px",
+                      color: "rgba(255,255,255,0.23)",
                     }}
                   >
                     SOCIAL
@@ -4785,14 +4904,16 @@ function SlashkartMatUI(props) {
                   marginTop: "20px",
                 }}
               />
-              <Grid zeroMinWidth item>
+              <Grid zeroMinWidth item style={{ paddingLeft: "10px" }}>
                 <div>
                   <Typography
                     variant="body1"
+                    align="left"
                     style={{
-                      marginLeft: "10px",
-                      color: "rgba(255,255,255,0.23)",
+                      marginLeft: "5px",
                       fontSize: "14px",
+                      paddingBottom: "5px",
+                      color: "rgba(255,255,255,0.23)",
                     }}
                   >
                     Mail Us :
@@ -4800,36 +4921,42 @@ function SlashkartMatUI(props) {
                   <div style={{ marginLeft: "5px" }}>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Slashdiv Technologies Private Limited,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Flat No.15,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       PS Sivaswamy Salai,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Mylapore,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Chennai-600004,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Tamilnadu, India.
@@ -4841,10 +4968,12 @@ function SlashkartMatUI(props) {
                 <div>
                   <Typography
                     variant="body1"
+                    align="left"
                     style={{
-                      marginLeft: "10px",
-                      color: "rgba(255,255,255,0.23)",
+                      marginLeft: "5px",
                       fontSize: "14px",
+                      paddingBottom: "5px",
+                      color: "rgba(255,255,255,0.23)",
                     }}
                   >
                     Registered Office Address :
@@ -4852,42 +4981,49 @@ function SlashkartMatUI(props) {
                   <div style={{ marginLeft: "5px" }}>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Slashdiv Technologies Private Limited,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Flat No.15,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       PS Sivaswamy Salai,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Mylapore,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Chennai-600004,
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Tamilnadu, India.
                     </Typography>
                     <Typography
                       variant="h6"
+                      align="left"
                       style={{ color: "#ffffff", fontSize: "12px" }}
                     >
                       Telephone :{" "}
@@ -4977,5 +5113,4 @@ function SlashkartMatUI(props) {
     </div>
   );
 }
-
 export default SlashkartMatUI;
